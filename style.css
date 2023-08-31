@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+img{
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 3fr 7.8fr;
+    grid-template-areas: 
+    "section header"
+    "aside main"
+    "footer footer" 
+    ;
+    gap: 8px;
+    padding: 10px;
+}
+.circle{
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.section-item {
+    color: #b3b3b3;
+    display: flex;
+    cursor: pointer;
+}
+.section-item i {
+    margin-right: 13px;
+    font-size: 16px;
+    line-height: 100%;
+}
+.section-main {
+    height: 100%;
+    gap:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.aside-item {
+    color: #b3b3b3;
+    display: flex;
+    cursor: pointer;
+    margin-left:10px;
+}
+.aside-item i {
+    margin-right: 13px;
+    font-size: 16px;
+    line-height: 100%;
+}
+.aside-main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap:250px
+}
+.aside-1{
+    display: flex;
+    flex-direction: column;
+}
+.widgets{   
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:8px;
+    min-height: 100%;
+    padding: 0 8px 8px;
+}
+.aside-2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.aside-2-item-1{
+    color: #b3b3b3;
+    font-size: 12px;
+    display: flex;
+    cursor: pointer;
+    margin: 32px 0px 0px 0px;
+    padding: 0px 24px 0px 24px;
+}
+.aside-2-item-2{
+    color: #b3b3b3;
+    display: flex;
+    cursor: pointer;
+    padding: 24px 0px 24px 48px;
+}
+h1, h2{
+    color: white;
+    margin-bottom: 20px;
+}
+.widget{
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    margin:8px 0;
+    color: white;
+    border-radius: 8px;
+    padding: 16px 20px;
+    font-size: 10px;
+    justify-content: center;
+}
+
+
+body{
+    background-color: black;
+}
+
+section{
+    grid-area: section;
+    color: white;
+    background-color: #121212;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 20px;  
+}
+
+
+header{
+    grid-area: header;
+    border-radius: 8px;
+    height: 100px;
+    background-color: #121212;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    padding-right: 10px;
+    color: white;
+}
+
+button{
+    background-color: white;
+    color: black;
+    font-size: 1    4px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    padding: 8px 16px 8px 16px;
+}
+
+a{
+    color: #b3b3b3;
+}
+.left{
+    display: flex;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+main{
+    grid-area: main;
+    background-color: #121212;
+    display: grid;
+    border-radius: 8px;
+    grid-template-rows: 0px;
+    padding-left: 20px;
+    padding-top:10px;
+}
+
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
+    grid-template-rows: 300px;
+    padding: 30px;
+    gap: 25px;
+}
+
+.box{
+    background-color: #181818;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+}
+.language{
+    color:white;
+    background-color: #121212;
+    border: 1px solid white;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    padding: 10px 15px 10px 15px;
+}
+footer{
+    grid-area: footer;
+    color: white;
+}
+.signup-bar{
+    display: flex;
+    background-image: linear-gradient(90deg,#af2896,#509bf5);
+    padding: 11px 24px 7px 15px;
+    justify-content: space-between;
+    gap:24px;
+}
+p{
+    margin-bottom: 10px;
+}
+.size-12{
+    font-size: 12px;
+}
+
+.size-16{
+    font-size: 16px;
+}
+.size-14{
+    font-size: 14px;
+}
+h3{
+    color: white;
+}
+
+
+
